@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A001 /* FlowProxyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001 /* FlowProxyApp.swift */; };
+		A002 /* ProxySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* ProxySession.swift */; };
+		A003 /* ReverseProxyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* ReverseProxyRule.swift */; };
+		A004 /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* ProxyServer.swift */; };
+		A005 /* HTTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* HTTPParser.swift */; };
+		A006 /* HTTPSInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* HTTPSInterceptor.swift */; };
+		A007 /* ReverseProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* ReverseProxyManager.swift */; };
+		A008 /* CertificateAuthorityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* CertificateAuthorityManager.swift */; };
+		A009 /* TrafficStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* TrafficStore.swift */; };
+		A010 /* ProxyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* ProxyViewModel.swift */; };
+		A011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011 /* ContentView.swift */; };
+		A012 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012 /* SessionListView.swift */; };
+		A013 /* SessionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013 /* SessionRowView.swift */; };
+		A014 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F014 /* SessionDetailView.swift */; };
+		A015 /* RequestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015 /* RequestTabView.swift */; };
+		A016 /* ResponseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016 /* ResponseTabView.swift */; };
+		A017 /* HeadersTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017 /* HeadersTabView.swift */; };
+		A018 /* CookiesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F018 /* CookiesTabView.swift */; };
+		A019 /* TimingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F019 /* TimingTabView.swift */; };
+		A020 /* ReverseProxySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F020 /* ReverseProxySettingsView.swift */; };
+		AASSETS /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FASSETS /* Assets.xcassets */; };
+		BCC01 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC001 /* main.swift */; };
+		BCC02 /* CLIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC002 /* CLIClient.swift */; };
+		BCC03 /* OutputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC003 /* OutputFormatter.swift */; };
+		BS002 /* ProxySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* ProxySession.swift */; };
+		BS003 /* ReverseProxyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* ReverseProxyRule.swift */; };
+		BS004 /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* ProxyServer.swift */; };
+		BS005 /* HTTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* HTTPParser.swift */; };
+		BS006 /* HTTPSInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* HTTPSInterceptor.swift */; };
+		BS007 /* ReverseProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* ReverseProxyManager.swift */; };
+		BS008 /* CertificateAuthorityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* CertificateAuthorityManager.swift */; };
+		BSS01 /* ServiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FS001 /* ServiceStore.swift */; };
+		BSS02 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FS002 /* APIServer.swift */; };
+		BSS03 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FS003 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F001 /* FlowProxyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowProxyApp.swift; sourceTree = "<group>"; };
+		F002 /* ProxySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySession.swift; sourceTree = "<group>"; };
+		F003 /* ReverseProxyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseProxyRule.swift; sourceTree = "<group>"; };
+		F004 /* ProxyServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyServer.swift; sourceTree = "<group>"; };
+		F005 /* HTTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser.swift; sourceTree = "<group>"; };
+		F006 /* HTTPSInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPSInterceptor.swift; sourceTree = "<group>"; };
+		F007 /* ReverseProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseProxyManager.swift; sourceTree = "<group>"; };
+		F008 /* CertificateAuthorityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateAuthorityManager.swift; sourceTree = "<group>"; };
+		F009 /* TrafficStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficStore.swift; sourceTree = "<group>"; };
+		F010 /* ProxyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewModel.swift; sourceTree = "<group>"; };
+		F011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F012 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		F013 /* SessionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRowView.swift; sourceTree = "<group>"; };
+		F014 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		F015 /* RequestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTabView.swift; sourceTree = "<group>"; };
+		F016 /* ResponseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTabView.swift; sourceTree = "<group>"; };
+		F017 /* HeadersTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersTabView.swift; sourceTree = "<group>"; };
+		F018 /* CookiesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookiesTabView.swift; sourceTree = "<group>"; };
+		F019 /* TimingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingTabView.swift; sourceTree = "<group>"; };
+		F020 /* ReverseProxySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseProxySettingsView.swift; sourceTree = "<group>"; };
+		FAPP /* FlowProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FASSETS /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FC002 /* CLIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIClient.swift; sourceTree = "<group>"; };
+		FC003 /* OutputFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFormatter.swift; sourceTree = "<group>"; };
+		FCLIPROD /* flowproxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = flowproxy; sourceTree = BUILT_PRODUCTS_DIR; };
+		FS001 /* ServiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStore.swift; sourceTree = "<group>"; };
+		FS002 /* APIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
+		FS003 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FSVCPROD /* FlowProxyService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlowProxyService; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFFW /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFW_CLI /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFW_SVC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GRP_CERT /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				F008 /* CertificateAuthorityManager.swift */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		GRP_CLI_DIR /* flowproxycli */ = {
+			isa = PBXGroup;
+			children = (
+				FC001 /* main.swift */,
+				FC002 /* CLIClient.swift */,
+				FC003 /* OutputFormatter.swift */,
+			);
+			path = flowproxycli;
+			sourceTree = "<group>";
+		};
+		GRP_MODELS /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F002 /* ProxySession.swift */,
+				F003 /* ReverseProxyRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GRP_NET /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F004 /* ProxyServer.swift */,
+				F005 /* HTTPParser.swift */,
+				F006 /* HTTPSInterceptor.swift */,
+				F007 /* ReverseProxyManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		GRP_PROD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAPP /* FlowProxy.app */,
+				FSVCPROD /* FlowProxyService */,
+				FCLIPROD /* flowproxy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GRP_ROOT = {
+			isa = PBXGroup;
+			children = (
+				GRP_SRC /* FlowProxy */,
+				GRP_SVC_DIR /* FlowProxyService */,
+				GRP_CLI_DIR /* flowproxycli */,
+				GRP_PROD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GRP_SRC /* FlowProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FASSETS /* Assets.xcassets */,
+				F001 /* FlowProxyApp.swift */,
+				GRP_MODELS /* Models */,
+				GRP_NET /* Networking */,
+				GRP_CERT /* Certificate */,
+				GRP_STORE /* Store */,
+				GRP_VM /* ViewModels */,
+				GRP_VIEWS /* Views */,
+			);
+			path = FlowProxy;
+			sourceTree = "<group>";
+		};
+		GRP_STORE /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F009 /* TrafficStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		GRP_SVC_DIR /* FlowProxyService */ = {
+			isa = PBXGroup;
+			children = (
+				FS003 /* main.swift */,
+				FS001 /* ServiceStore.swift */,
+				FS002 /* APIServer.swift */,
+			);
+			path = FlowProxyService;
+			sourceTree = "<group>";
+		};
+		GRP_VIEWS /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F011 /* ContentView.swift */,
+				F012 /* SessionListView.swift */,
+				F013 /* SessionRowView.swift */,
+				F014 /* SessionDetailView.swift */,
+				F015 /* RequestTabView.swift */,
+				F016 /* ResponseTabView.swift */,
+				F017 /* HeadersTabView.swift */,
+				F018 /* CookiesTabView.swift */,
+				F019 /* TimingTabView.swift */,
+				F020 /* ReverseProxySettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GRP_VM /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F010 /* ProxyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TGT_APP /* FlowProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL_APP /* Build configuration list for PBXNativeTarget "FlowProxy" */;
+			buildPhases = (
+				BSRC /* Sources */,
+				BFFW /* Frameworks */,
+				BRES /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowProxy;
+			productName = FlowProxy;
+			productReference = FAPP /* FlowProxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TGT_CLI /* flowproxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL_CLI /* Build configuration list for PBXNativeTarget "flowproxy" */;
+			buildPhases = (
+				BSRC_CLI /* Sources */,
+				BFFW_CLI /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flowproxy;
+			productName = flowproxy;
+			productReference = FCLIPROD /* flowproxy */;
+			productType = "com.apple.product-type.tool";
+		};
+		TGT_SVC /* FlowProxyService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL_SVC /* Build configuration list for PBXNativeTarget "FlowProxyService" */;
+			buildPhases = (
+				BSRC_SVC /* Sources */,
+				BFFW_SVC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowProxyService;
+			productName = FlowProxyService;
+			productReference = FSVCPROD /* FlowProxyService */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TGT_APP = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TGT_CLI = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TGT_SVC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BCL_PROJ /* Build configuration list for PBXProject "FlowProxy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GRP_ROOT;
+			productRefGroup = GRP_PROD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TGT_APP /* FlowProxy */,
+				TGT_SVC /* FlowProxyService */,
+				TGT_CLI /* flowproxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BRES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AASSETS /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BSRC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001 /* FlowProxyApp.swift in Sources */,
+				A002 /* ProxySession.swift in Sources */,
+				A003 /* ReverseProxyRule.swift in Sources */,
+				A004 /* ProxyServer.swift in Sources */,
+				A005 /* HTTPParser.swift in Sources */,
+				A006 /* HTTPSInterceptor.swift in Sources */,
+				A007 /* ReverseProxyManager.swift in Sources */,
+				A008 /* CertificateAuthorityManager.swift in Sources */,
+				A009 /* TrafficStore.swift in Sources */,
+				A010 /* ProxyViewModel.swift in Sources */,
+				A011 /* ContentView.swift in Sources */,
+				A012 /* SessionListView.swift in Sources */,
+				A013 /* SessionRowView.swift in Sources */,
+				A014 /* SessionDetailView.swift in Sources */,
+				A015 /* RequestTabView.swift in Sources */,
+				A016 /* ResponseTabView.swift in Sources */,
+				A017 /* HeadersTabView.swift in Sources */,
+				A018 /* CookiesTabView.swift in Sources */,
+				A019 /* TimingTabView.swift in Sources */,
+				A020 /* ReverseProxySettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BSRC_CLI /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC01 /* main.swift in Sources */,
+				BCC02 /* CLIClient.swift in Sources */,
+				BCC03 /* OutputFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BSRC_SVC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BS002 /* ProxySession.swift in Sources */,
+				BS003 /* ReverseProxyRule.swift in Sources */,
+				BS004 /* ProxyServer.swift in Sources */,
+				BS005 /* HTTPParser.swift in Sources */,
+				BS006 /* HTTPSInterceptor.swift in Sources */,
+				BS007 /* ReverseProxyManager.swift in Sources */,
+				BS008 /* CertificateAuthorityManager.swift in Sources */,
+				BSS01 /* ServiceStore.swift in Sources */,
+				BSS02 /* APIServer.swift in Sources */,
+				BSS03 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC_APP_DBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowProxy/FlowProxy.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 120;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlowProxy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flowstations.flowproxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		BC_APP_REL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowProxy/FlowProxy.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 120;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlowProxy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flowstations.flowproxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BC_CLI_DBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		BC_CLI_REL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BC_PROJ_DBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_EXCEPTION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC_PROJ_REL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_EXCEPTION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BC_SVC_DBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		BC_SVC_REL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCL_APP /* Build configuration list for PBXNativeTarget "FlowProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_APP_DBG /* Debug */,
+				BC_APP_REL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL_CLI /* Build configuration list for PBXNativeTarget "flowproxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_CLI_DBG /* Debug */,
+				BC_CLI_REL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL_PROJ /* Build configuration list for PBXProject "FlowProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_PROJ_DBG /* Debug */,
+				BC_PROJ_REL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL_SVC /* Build configuration list for PBXNativeTarget "FlowProxyService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_SVC_DBG /* Debug */,
+				BC_SVC_REL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJ /* Project object */;
+}
