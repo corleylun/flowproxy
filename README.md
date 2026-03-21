@@ -1,5 +1,6 @@
 # FlowProxy
 
+
 A macOS HTTP/HTTPS debugging proxy — capture, inspect, and replay network traffic from any app or browser.
 
 FlowProxy is a developer tool in the spirit of Charles Proxy and mitmproxy, built entirely in Swift for macOS. It ships as three components: a **native SwiftUI app**, a **headless background service**, and a **CLI** with full JSON output for scripting and AI agent workflows.
